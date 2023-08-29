@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 300px;
+    background-color: rgb(20, 100, 180);
+}
+
+main {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+main section#container-produto {
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+main section#container-produto div.card-produto {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main section#container-produto div.card-produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
